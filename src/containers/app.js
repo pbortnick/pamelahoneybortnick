@@ -14,6 +14,7 @@ class App extends Component {
       <div className="App">
         <Header history={this.props.history} />
         <View history={this.props.history} />
+        <div class="footer-icon-credit">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
       </div>
     );
   }

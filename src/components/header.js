@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import honey from '../assets/images/honey.svg';
+
 const Header = (props) => {
   return (
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Pamela Honey Bortnick</a>
+      <Link class="navbar-brand d-flex align-items-start" to="/">
+        <img class="mr-1" src={honey} alt=""></img>
+        <span>Pamela Honey Bortnick</span>
+      </Link>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
