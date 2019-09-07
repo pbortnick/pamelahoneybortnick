@@ -4,6 +4,8 @@ import Header from '../components/header';
 import View from '../containers/view';
 
 import '../assets/bootswatch/united.scss';
+import '../assets/feather/feather.min.css';
+
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 class App extends Component {

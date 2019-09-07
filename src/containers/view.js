@@ -7,28 +7,28 @@ import Contact from '../components/contact';
 
 class View extends Component {
   render() {
-    let render_hash_content;
+    let render_tab_content;
 
-    switch (this.props.history.location.hash) {
+    switch (this.props.history.location.pathname) {
       case '':
-        render_hash_content = Home;
+        render_tab_content = Home;
         break;
-      case '#about':
-        render_hash_content = About;
+      case '/about':
+        render_tab_content = About;
         break;
-      case '#projects':
-        render_hash_content = Projects;
+      case '/projects':
+        render_tab_content = Projects;
         break;
-      case '#contact':
-        render_hash_content = Contact;
+      case '/contact':
+        render_tab_content = Contact;
         break;
       default:
-        render_hash_content = Home;
+        render_tab_content = Home;
     }
     
     return (
       <div>
-        { render_hash_content() }
+        { render_tab_content() }
       </div>
     )
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = (props) => {
   return (
@@ -10,17 +11,17 @@ const Header = (props) => {
 
       <div class="collapse navbar-collapse" id="navbarColor02">
         <ul class="navbar-nav mr-auto">
-          <li class={'nav-item' + (window.location.hash === '#' ? ' active' :  '')}>
-            <a class="nav-link" href="#">Home</a>
+          <li class={'nav-item' + (props.history.location.pathname === '/' ? ' active' :  '')}>
+            <Link class="nav-link" to="/">Home</Link>
           </li>
-          <li class={'nav-item' + (window.location.hash === '#about' ? ' active' :  '')}>
-            <a class="nav-link" href="#about">About</a>
+          <li class={'nav-item' + (props.history.location.pathname === '/about' ? ' active' :  '')}>
+            <Link class="nav-link" to="/about">About</Link>
           </li>
-          <li class={'nav-item' + (window.location.hash === '#projects' ? ' active' :  '')}>
-            <a class="nav-link" href="#projects">Projects</a>
+          <li class={'nav-item' + (props.history.location.pathname === '/projects' ? ' active' :  '')}>
+            <Link class="nav-link" to="/projects">Projects</Link>
           </li>
-          <li class={'nav-item' + (window.location.hash === '#contact' ? ' active' :  '')}>
-            <a class="nav-link" href="#contact">Contact</a>
+          <li class={'nav-item' + (props.history.location.pathname === '/contact' ? ' active' :  '')}>
+            <Link class="nav-link" to="/contact">Contact</Link>
           </li>
         </ul>
       </div>
