@@ -1,0 +1,10 @@
+.nav {
+  height: 62px;
+  background: #BBBFB5;
+  width: 100%;
+  z-index: 1;
+
+  @media (--large) {
+    height: 80px;
+  }
+}
