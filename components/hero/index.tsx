@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import s from './s.module.css'
+
 const Hero = () => {
   return (
     <header className={s.hero}>

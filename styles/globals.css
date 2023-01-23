@@ -28,12 +28,12 @@
   --header-4: 1.38rem;
   --header-5: 1.25rem;
   --header-6: 1rem;
-  --text--large: 2.25rem;
+  --text: 1.25rem;
+  --text-medium: 1.5rem;
+  --text-large: 2.25rem;
   --paragraph: 0.75rem;
   --footnote: 0.62rem;
-  --heading--hero: 4rem;
-  --link--large: 2.25rem;
-  --text--medium: 1.5rem;
+  --heading-hero: 4rem;
 }
 
 
@@ -76,14 +76,46 @@ a {
   }
 }
 
-.container {
+.page-heading {
+  font-family: 'Mohave', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+}
+
+.flex-container {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
-  column-gap: var(--column-gap);
   margin: 0 auto;
   padding: var(--padding);
   width: 100%;
+  display: flex;
+
+  @media (--small) {
+    --padding: 0 24px;
+    max-width: 616px;
+  }
+
+  @media (--medium) {
+    --padding: 0 40px;
+    max-width: 944px;
+  }
+
+  @media (--large) {
+    --padding: 0 48px;
+    max-width: 1312px;
+  }
+}
+
+.grid-container {
+  position: relative;
+  margin: 0 auto;
+  padding: var(--padding);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+  column-gap: var(--column-gap);
 
   @media (--small) {
     --columns: 4;

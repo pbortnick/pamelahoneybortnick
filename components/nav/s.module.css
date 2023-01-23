@@ -11,3 +11,20 @@
     height: 80px;
   }
 }
+
+.inner {
+  composes: flex-container from global;
+  max-width: 1000px;
+  justify-content: space-evenly;
+}
+
+.link {
+  font-size: var(--text);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.currentPath {
+  text-decoration: underline;
+}

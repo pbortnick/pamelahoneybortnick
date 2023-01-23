@@ -1,0 +1,14 @@
+.main {
+  min-height: 100vh;
+  background: var(--light-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.text {
+  composes: page-heading from global;
+  color: var(--highlight-3);
+}
+

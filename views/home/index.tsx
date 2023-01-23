@@ -13,7 +13,6 @@ const HomeView = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className={s.main}>
-        <Nav />
         <Hero />
         <div className={s.topGraphicContainer}>
           <Image
