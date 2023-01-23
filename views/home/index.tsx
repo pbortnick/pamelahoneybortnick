@@ -17,7 +17,7 @@ const HomeView = () => {
         <div className={s.topGraphicContainer}>
           <Image
             fill
-            src={require('lib/images/graphics/left-slanted.svg')}
+            src={require('lib/images/graphics/slanted.svg')}
             alt=""
             className={s.topGraphic}
           />
@@ -25,7 +25,7 @@ const HomeView = () => {
         <div className={s.bottomGraphicContainer}>
           <Image
             fill
-            src={require('lib/images/graphics/right-detached.svg')}
+            src={require('lib/images/graphics/detached.svg')}
             alt=""
             className={s.bottomGraphic}
           />

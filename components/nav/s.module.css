@@ -14,8 +14,23 @@
 
 .inner {
   composes: flex-container from global;
+  justify-content: space-between;
+
+  @media (--medium-up) {
+    justify-content: center;
+  }
+}
+
+.desktopNavPanel {
+  display: none;
+  grid-column: 1 / -1;
+  width: 100%;
   max-width: 1000px;
   justify-content: space-evenly;
+
+  @media (--medium-up) {
+    display: flex;
+  }
 }
 
 .link {
@@ -27,4 +42,17 @@
 
 .currentPath {
   text-decoration: underline;
+}
+
+.mobileButton {
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+
+  @media (--medium-up) {
+    display: none;
+  }
 }

@@ -1,12 +1,13 @@
 .hero {
   composes: grid-container from global;
-  padding-top: 28px;
+  padding-top: 60px;
   row-gap: 42px;
   padding-bottom: 200px;
   z-index: 1;
 
   @media (--medium) {
     row-gap: 64px;
+    padding-top: 72px;
   }
 
   @media (--large) {
