@@ -4,6 +4,14 @@
   padding-bottom: 12px;
   background: var(--dark);
   z-index: 2;
+  height: 67px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (--medium-up) {
+    height: auto;
+  }
 }
 
 .wipText {
