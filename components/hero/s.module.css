@@ -2,7 +2,6 @@
   composes: grid-container from global;
   padding-top: 60px;
   row-gap: 42px;
-  padding-bottom: 200px;
   z-index: 1;
 
   @media (--medium) {
