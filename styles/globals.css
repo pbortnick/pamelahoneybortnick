@@ -28,6 +28,7 @@
   --header-4: 1.38rem;
   --header-5: 1.25rem;
   --header-6: 1rem;
+  --text-small: 1rem;
   --text: 1.15rem;
   --text-medium: 1.5rem;
   --text-large: 2.25rem;
@@ -56,6 +57,7 @@ body {
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,

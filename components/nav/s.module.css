@@ -34,7 +34,6 @@
 
 .link {
   font-size: var(--text);
-  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: var(--dark);
 }

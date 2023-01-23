@@ -24,8 +24,9 @@ const DesktopNavPanel = () => (
 )
 
 const MobileNavPanel = () => {
-  const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false)
+  const { pathname } = useRouter()
   const mediumUp = useMediumUp()
+  const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false)
 
   const close = () => setMenuIsOpen(false)
 
@@ -34,6 +35,12 @@ const MobileNavPanel = () => {
       close()
     }
   }, [mediumUp])
+
+  useEffect(() => {
+    if (menuIsOpen) {
+      close()
+    }
+  }, [pathname])
 
   return (
     <FocusOn

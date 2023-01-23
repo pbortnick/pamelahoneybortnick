@@ -7,11 +7,6 @@ import Head from 'next/head';
 const HomeView = () => {
   return (
     <>
-      <Head>
-        <title>Pamela Bortnick</title>
-        <meta name="description" content="Full stack software engineer" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
       <main className={s.main}>
         <Hero />
         <div className={s.topGraphicContainer}>
