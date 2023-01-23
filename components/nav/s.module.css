@@ -33,9 +33,13 @@
 }
 
 .link {
-  font-size: var(--text);
+  font-size: var(--text-medium);
   font-weight: 600;
   color: var(--dark);
+
+  @media (--medium-up) {
+    font-size: var(--text);
+  }
 }
 
 .currentPath {
@@ -77,7 +81,7 @@
 .mobileNavLinks {
   display: none;
   position: fixed;
-  top: 61px;
+  top: 128px;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -87,7 +91,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 32px;
 
   &.isOpen {
     display: flex;
