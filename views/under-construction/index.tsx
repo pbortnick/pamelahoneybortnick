@@ -3,10 +3,10 @@ import s from './s.module.css'
 
 export default function UnderConstructionView() {
   return (
-    <>
-      <main className={s.main}>
+    <div className={s.main}>
+      <div className={s.inner}>
         <h1 className={s.text}>Under Construction</h1>
-      </main>
-    </>
+      </div>
+    </div>
   )
 }
