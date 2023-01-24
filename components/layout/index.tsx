@@ -12,7 +12,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription}/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="My page title" key="title" />
+        <meta property="og:title" content={pageTitle} key="title" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
         <meta
