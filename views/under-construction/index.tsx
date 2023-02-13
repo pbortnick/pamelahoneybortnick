@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import s from './s.module.css'
 
 export default function UnderConstructionView() {

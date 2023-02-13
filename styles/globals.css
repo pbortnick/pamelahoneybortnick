@@ -1,4 +1,7 @@
+@import "./colors.css";
+@import "./containers.css";
 @import "./custom-media.css";
+@import "./text.css";
 @import "./typography.css";
 
 root {

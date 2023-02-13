@@ -1,8 +1,6 @@
 import Image from 'next/image';
-import Hero from 'components/hero';
-import Nav from 'components/nav';
+import Hero from 'views/home/components/hero';
 import s from './s.module.css';
-import Head from 'next/head';
 
 const HomeView = () => {
   return (

@@ -1,99 +1,94 @@
 .nav {
-  height: 62px;
-  background: #BBBFB5;
-  width: 100%;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	height: 62px;
+	background: var(--sage-medium);
+	width: 100%;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-  @media (--large) {
-    height: 80px;
-  }
+	@media (--large) {
+		height: 80px;
+	}
 }
 
 .container {
-  composes: flex-container from global;
-  justify-content: space-between;
+	composes: flex-container from global;
+	justify-content: space-between;
 
-  @media (--medium-up) {
-    justify-content: center;
-  }
+	@media (--medium-up) {
+		justify-content: center;
+	}
 }
 
 .desktopNavPanel {
-  display: none;
-  width: 100%;
-  max-width: 1000px;
-  justify-content: space-evenly;
+	display: none;
+	width: 100%;
+	max-width: 1000px;
+	justify-content: space-evenly;
 
-  @media (--medium-up) {
-    display: flex;
-  }
+	@media (--medium-up) {
+		display: flex;
+	}
 }
 
 .link {
-  font-size: var(--text-medium);
-  font-weight: 600;
-  color: var(--dark);
-
-  @media (--medium-up) {
-    font-size: var(--text);
-  }
+	composes: link-underlined from global;
+	color: var(--maroon);
 }
 
 .currentPath {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .mobileButton {
-  -webkit-appearance: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  padding: 0;
+	-webkit-appearance: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	padding: 0;
 
-  @media (--medium-up) {
-    display: none;
-  }
+	@media (--medium-up) {
+		display: none;
+	}
 }
 
 .mobileBodyOuter {
-  display: flex;
-  width: 100%;
+	display: flex;
+	width: 100%;
 
-  @media (--medium-up) {
-    display: none;
-  }
+	@media (--medium-up) {
+		display: none;
+	}
 }
 
 .mobileBody {
-  width: 100%;
+	width: 100%;
 }
 
 .top {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 
 .mobileNavLinks {
-  display: none;
-  position: fixed;
-  top: 136px;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  min-height: 100vh;
-  background: #BBBFB5;
-  z-index: 2;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
+	display: none;
+	position: fixed;
+	top: 136px;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	min-height: 100vh;
+	background: var(--sage-medium);
+	z-index: 2;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 32px;
 
-  &.isOpen {
-    display: flex;
-  }
+	&.isOpen {
+		display: flex;
+	}
 }

@@ -12,7 +12,7 @@
 
 .header-3 {
 	font-weight: 400;
-	font-family: var(--body-font);
+	font-family: var(--heading-font);
 	font-size: var(--header-3);
 }
 
@@ -47,22 +47,22 @@
 }
 
 .link {
-	font-weight: 400;
+	font-weight: 600;
 	font-family: var(--body-font);
 	font-size: var(--link);
+}
+
+.link-underlined {
+	font-weight: 600;
+	font-family: var(--body-font);
+	font-size: var(--link);
+	text-decoration: underline;
 }
 
 .body-light {
 	font-weight: 300;
 	font-family: var(--body-font);
 	font-size: var(----body-light);
-}
-
-.link-underlined {
-	font-weight: 400;
-	font-family: var(--body-font);
-	font-size: var(--link);
-	text-decoration: underline;
 }
 
 .body {
