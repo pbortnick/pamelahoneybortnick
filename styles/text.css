@@ -1,0 +1,18 @@
+:root {
+	--header-1: 3rem;
+	--header-2: 3rem;
+	--header-3: 1.75rem;
+	--header-4: 1.38rem;
+	--header-5: 1.25rem;
+	--header-6: 1rem;
+	--footnote: 0.62rem;
+	--hero-heading: 4rem;
+	--link: 0.91rem;
+	--body-light: 1.12rem;
+	--link-underlined: 0.91rem;
+	--body: 1.12rem;
+	--label: 0.62rem;
+
+	--heading-font: "Della Respira", serif;
+	--body-font: "Open Sans", sans-serif;
+}
