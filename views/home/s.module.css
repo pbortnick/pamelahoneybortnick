@@ -1,8 +1,5 @@
 .main {
-	min-height: 100vh;
 	background: var(--casual);
-	display: flex;
-	flex-direction: column;
 	position: relative;
 }
 
