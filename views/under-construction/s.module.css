@@ -1,23 +1,21 @@
 .main {
-  background: var(--light-2);
-  width: 100%;
-  min-height: 100vh;
+	background: var(--casual);
+	width: 100%;
+	min-height: 100vh;
 }
 
 .inner {
-  composes: flex-container from global;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  min-height: 100vh;
+	composes: flex-container from global;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	min-height: 100vh;
 }
-
 
 .text {
-  @media (--small) {
-    font-size: 40px;
-  }
-  composes: page-heading from global;
-  color: var(--highlight-3);
-}
+	@media (--small) {
+		font-size: 40px;
+	}
 
+	composes: page-heading from global;
+}
