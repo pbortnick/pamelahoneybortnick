@@ -28,7 +28,7 @@ export default function AboutView() {
         <br />
         <p>I am a team player and a perpetual learner. I enjoy seeing live music and am a connoisseur of prestige television.</p>
         <br />
-        <p>This site is a work in progress and will have some more fun stuff like icons, animations, and more, coming soon!</p>
+        <p>This site is a work in progress and will have some other fun stuff like icons, animations, and more, coming soon!</p>
       </div>
       <div className={s.social}>
         <a href="https://www.linkedin.com/in/pamelahoneybortnick/">My LinkedIn</a>
