@@ -80,7 +80,7 @@
 .mobileNavLinks {
 	display: none;
 	position: fixed;
-	top: 136px;
+	top: 62px;
 	left: 0;
 	width: 100vw;
 	height: 100vh;
@@ -88,11 +88,15 @@
 	background: var(--sage-medium);
 	z-index: 2;
 	flex-direction: column;
-	justify-content: center;
+	padding-top: 180px;
 	align-items: center;
-	gap: 32px;
+	gap: 48px;
 
 	&.isOpen {
 		display: flex;
+	}
+
+	& a {
+		font-size: var(--header-3);
 	}
 }

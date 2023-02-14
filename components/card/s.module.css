@@ -5,8 +5,7 @@
 	position: relative;
 	transition-duration: 250ms;
 	transition-timing-function: ease-in-out;
-	transition-property: color;
-	transition-property: all;
+	transition-property: transform;
 
 	&:hover {
 		transform: translateY(-4px);
@@ -20,6 +19,7 @@
 }
 
 .body {
+	border-top: 2px solid var(--sage-dark);
 	background: var(--offwhite);
 	color: var(--maroon);
 	padding: 22px 20px 32px;
@@ -32,7 +32,6 @@
 
 .image {
 	display: grid;
-	border-bottom: 2px solid var(--maroon);
 	border-top-left-radius: 16px;
 	border-top-right-radius: 16px;
 
