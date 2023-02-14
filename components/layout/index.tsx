@@ -6,11 +6,12 @@ import s from './s.module.css'
 export default function Layout({ children }: { children: ReactNode }) {
   const pageTitle = 'Pamela Bortnick'
   const pageDescription = 'Full stack software engineer'
+
   return (
     <>
       <Head>
         <title>{pageTitle}</title>
-        <meta name="description" content={pageDescription}/>
+        <meta name="description" content={pageDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content={pageTitle} key="title" />
         <meta name="twitter:title" content={pageTitle} />

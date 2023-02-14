@@ -1,0 +1,25 @@
+.tag {
+	border-radius: 12px;
+	height: 24px;
+	padding: 10px 12px;
+	width: fit-content;
+	background-color: var(--light);
+	color: var(--dark);
+	display: flex;
+	align-items: center;
+	--border-color: var(--dark);
+
+	&.inverted {
+		background: var(--dark);
+		color: var(--light);
+		--border-color: var(--light);
+	}
+
+	&.hasBorder {
+		border: 1px solid var(--border-color);
+	}
+}
+
+.text {
+	composes: label from global;
+}

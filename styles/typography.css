@@ -71,6 +71,12 @@
 	font-size: var(--body);
 }
 
+.body-small {
+	font-weight: 400;
+	font-family: var(--body-font);
+	font-size: var(--body-small);
+}
+
 .label {
 	font-weight: 400;
 	font-family: var(--heading-font);
