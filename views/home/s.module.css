@@ -1,4 +1,5 @@
 .main {
+	composes: page-height from global;
 	background: var(--casual);
 	position: relative;
 }

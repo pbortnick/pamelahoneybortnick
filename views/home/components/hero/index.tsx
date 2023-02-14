@@ -15,7 +15,7 @@ const Hero = () => {
         </div>
       </div>
       <div className={s.imageContainer}>
-        <Image src={require('./profile-pic.png')} height={800} alt="profile picture of pam" width={660} className={s.image} />
+        <Image src={require('./profile-pic.png')} height={800} alt="profile picture of pam" width={660} className={s.image} priority />
       </div>
     </header>
   )

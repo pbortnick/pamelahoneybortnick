@@ -38,6 +38,10 @@ a {
 	text-decoration: none;
 }
 
+.page-height {
+	min-height: calc(100vh - 62px);
+}
+
 @media (prefers-color-scheme: dark) {
 	html {
 		color-scheme: dark;

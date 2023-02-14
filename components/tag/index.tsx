@@ -5,7 +5,7 @@ export const BASE_THEMES = ['pale', 'sage', 'casual', 'offwhite'] as const
 type BaseThemeOptions = typeof BASE_THEMES[number]
 
 
-interface TagProps {
+export interface TagProps {
   theme?: BaseThemeOptions
   inverted?: boolean
   text: string
