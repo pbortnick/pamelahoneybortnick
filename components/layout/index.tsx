@@ -25,13 +25,13 @@ export default function Layout({ children }: { children: ReactNode }) {
           content="https://pamelahoneybortnick.com/og-image.png"
         />
       </Head>
-      <div className={s.banner}>
+      {/* <div className={s.banner}>
         <div className={s.wip}>
           <p className={s.wipText}>
             This website is currently under construction. Please visit back in March 2023!
           </p>
         </div>
-      </div>
+      </div> */}
       <Nav />
       <main>{children}</main>
       {/* <Footer /> */}

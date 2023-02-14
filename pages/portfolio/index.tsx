@@ -1,3 +1,3 @@
-import UnderConstructionView from 'views/under-construction'
+import PortfolioView from 'views/portfolio';
 
-export default UnderConstructionView
+export default PortfolioView;
