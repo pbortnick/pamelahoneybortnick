@@ -48,6 +48,28 @@ a {
 	}
 }
 
+.container {
+	position: relative;
+	margin: 0 auto;
+	padding: var(--padding);
+	width: 100%;
+
+	@media (--small) {
+		--padding: 0 24px;
+		max-width: 616px;
+	}
+
+	@media (--medium) {
+		--padding: 0 40px;
+		max-width: 944px;
+	}
+
+	@media (--large) {
+		--padding: 0 48px;
+		max-width: 1312px;
+	}
+}
+
 .flex-container {
 	position: relative;
 	margin: 0 auto;

@@ -1,8 +1,3 @@
-import UnderConstructionView from 'views/under-construction'
+import AboutView from 'views/about';
 
-export default UnderConstructionView
-
-
-// professional software engineer
-// amateur web designer
-// awful skateboarder...
+export default AboutView;
