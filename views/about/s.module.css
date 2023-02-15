@@ -34,7 +34,7 @@
 	composes: body from global;
 	font-size: var(--body-small);
 	text-align: center;
-	border-bottom: 2px solid var(--offwhite);
+	position: relative;
 	padding: 8px;
 	align-items: center;
 	justify-content: center;
@@ -42,6 +42,17 @@
 
 	@media (--medium-up) {
 		font-size: var(--body);
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		height: 2px;
+		width: 40%;
+		background: var(--offwhite);
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	/* &:nth-child(2) {
