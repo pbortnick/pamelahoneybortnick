@@ -19,7 +19,7 @@ export default function AboutView() {
         </div>
         <div className={s.detail}>
           <span>
-            Horrible singer
+            Awful singer
           </span>
         </div>
       </div>

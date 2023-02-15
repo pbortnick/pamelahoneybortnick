@@ -34,8 +34,7 @@
 	composes: body from global;
 	font-size: var(--body-small);
 	text-align: center;
-	border: 1px solid var(--offwhite);
-	border-radius: 4px;
+	border-bottom: 2px solid var(--offwhite);
 	padding: 8px;
 	align-items: center;
 	justify-content: center;
