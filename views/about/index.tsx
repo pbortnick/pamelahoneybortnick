@@ -9,17 +9,19 @@ export default function AboutView() {
       <div className={s.detailsContainer}>
         <div className={s.detail}>
           <span>
-            Professional developer
+            professional developer
           </span>
         </div>
+        <div className={s.divider} />
         <div className={s.detail}>
           <span>
-            Amateur web designer
+            amateur web designer
           </span>
         </div>
+        <div className={s.divider} />
         <div className={s.detail}>
           <span>
-            Awful singer
+            terrible singer
           </span>
         </div>
       </div>

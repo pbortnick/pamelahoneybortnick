@@ -25,9 +25,24 @@
 .detailsContainer {
 	composes: container from global;
 	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
 	padding-top: 80px;
 	column-gap: 12px;
+	row-gap: 24px;
+
+	@media (--medium-up) {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+.divider {
+	width: 30%;
+	background: var(--offwhite);
+	height: 2px;
+	margin: 0 auto;
+
+	@media (--medium-up) {
+		display: none;
+	}
 }
 
 .detail {
@@ -35,30 +50,27 @@
 	font-size: var(--body-small);
 	text-align: center;
 	position: relative;
-	padding: 8px;
 	align-items: center;
 	justify-content: center;
 	display: flex;
 
 	@media (--medium-up) {
+		padding: 16px 8px 0;
 		font-size: var(--body);
 	}
 
-	&::before {
-		content: "";
-		position: absolute;
-		height: 2px;
-		width: 40%;
-		background: var(--offwhite);
-		top: 0;
-		left: 50%;
-		transform: translateX(-50%);
+	@media (--medium-up) {
+		&::before {
+			content: "";
+			position: absolute;
+			height: 2px;
+			width: 40%;
+			background: var(--offwhite);
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
-
-	/* &:nth-child(2) {
-		border-left: 1px solid var(--offwhite);
-		border-right: 1px solid var(--offwhite);
-	} */
 }
 
 .blurb {
