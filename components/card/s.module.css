@@ -14,8 +14,7 @@
 
 .link {
 	position: absolute;
-	inset: 0;
-	outline: none;
+	inset: -2px;
 }
 
 .body {
