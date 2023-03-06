@@ -1,21 +1,24 @@
-import Image from 'next/image'
-import s from './style.module.css'
+import classNames from 'classnames'
+import type { Icons } from 'types/icon-names'
+import s from './s.module.css'
+
+type Sizes = 'sm' | 'md' | 'lg'
 
 interface IconProps {
-  name: string
+  size?: Sizes
+  name: Icons
   color?: string
 }
 
-export default function Icon({ name, color }: IconProps) {
+export default function Icon({ name, color, size = 'md' }: IconProps) {
   return (
-    <Image
-      src={`/icons/${name}.svg`}
-      className={s.icon}
-      height={27}
-      width={32}
-      alt={`${name} icon`}
+    <span
+      aria-label={name}
+      className={classNames(s.icon, s[size])}
+      role="img"
       style={
         {
+          '--icon': `url(/icons/${name}.svg)`,
           '--fill': `var(--${color})`,
         } as React.CSSProperties
       }
