@@ -46,11 +46,11 @@
 }
 
 .mobileButton {
-	-webkit-appearance: none;
 	background: none;
 	border: none;
 	cursor: pointer;
 	display: flex;
+	align-items: center;
 	padding: 0;
 
 	@media (--medium-up) {
