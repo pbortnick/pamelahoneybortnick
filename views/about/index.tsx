@@ -9,14 +9,32 @@ export default function AboutView() {
       </div>
       <div className={s.detailsContainer}>
         <div className={s.detail}>
+          <Icon
+            name="stirrer"
+            size="lg"
+            color="offwhite"
+            className={s.iconDivider}
+          />
           <span>professional developer</span>
         </div>
-        <Divider />
+        <div className={s.divider} />
         <div className={s.detail}>
+          <Icon
+            name="stirrer"
+            size="lg"
+            color="offwhite"
+            className={s.iconDivider}
+          />
           <span>amateur web designer</span>
         </div>
-        <Divider />
+        <div className={s.divider} />
         <div className={s.detail}>
+          <Icon
+            name="stirrer"
+            size="lg"
+            color="offwhite"
+            className={s.iconDivider}
+          />
           <span>awful singer</span>
         </div>
       </div>
@@ -49,17 +67,6 @@ export default function AboutView() {
         <a href="https://www.linkedin.com/in/pamelahoneybortnick/">
           My LinkedIn
         </a>
-      </div>
-    </div>
-  )
-}
-
-function Divider() {
-  return (
-    <div className={s.divider}>
-      <div className={s.dividerLine} />
-      <div className={s.dividerIcon}>
-        <Icon name="stirrer" size="md" color="offwhite" />
       </div>
     </div>
   )

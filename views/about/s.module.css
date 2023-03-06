@@ -35,37 +35,14 @@
 }
 
 .divider {
-  width: 50%;
-  height: 24px;
+  width: 30%;
+  background: var(--offwhite);
+  height: 2px;
   margin: 0 auto;
-  position: relative;
 
   @media (--medium-up) {
     display: none;
   }
-}
-
-.dividerLine {
-  display: none;
-  position: absolute;
-  width: 100%;
-  background: var(--offwhite);
-  height: 2px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.dividerIcon {
-  z-index: 1;
-  padding: 0 8px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%);
-  top: 0;
-  display: flex;
-  align-items: center;
-  background: var(--sage-dark);
 }
 
 .detail {
@@ -82,13 +59,20 @@
   }
 
   @media (--medium-up) {
-    &::before {
+    /* &::before {
       content: '';
       position: absolute;
       height: 2px;
       width: 40%;
       background: var(--offwhite);
       top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    } */
+
+    & .iconDivider {
+      position: absolute;
+      top: -12px;
       left: 50%;
       transform: translateX(-50%);
     }
