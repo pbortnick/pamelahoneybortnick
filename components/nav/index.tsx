@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { FocusOn } from 'react-focus-on'
@@ -60,7 +59,18 @@ const MobileNavPanel = () => {
             aria-label="open mobile menu"
             onClick={() => setMenuIsOpen(!menuIsOpen)}
           >
-            <Icon name="menu" size="lg" color="maroon" />
+            <Icon
+              name="menu"
+              size="lg"
+              color="maroon"
+              className={classNames(s.icon, !menuIsOpen && s.show)}
+            />
+            <Icon
+              name="close"
+              size="lg"
+              color="maroon"
+              className={classNames(s.icon, menuIsOpen && s.show)}
+            />
           </button>
         </div>
         <div className={classNames(s.mobileNavLinks, menuIsOpen && s.isOpen)}>

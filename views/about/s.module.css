@@ -87,4 +87,6 @@
 .social {
   padding-top: 80px;
   composes: container from global;
+  display: grid;
+  row-gap: 12px;
 }

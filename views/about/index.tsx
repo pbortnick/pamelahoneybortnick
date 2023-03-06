@@ -35,7 +35,7 @@ export default function AboutView() {
             color="offwhite"
             className={s.iconDivider}
           />
-          <span>awful singer</span>
+          <span>terrible singer</span>
         </div>
       </div>
       <div className={s.blurb}>
@@ -65,8 +65,11 @@ export default function AboutView() {
       </div>
       <div className={s.social}>
         <a href="https://www.linkedin.com/in/pamelahoneybortnick/">
-          My LinkedIn
+          Visit my LinkedIn
         </a>
+        {/* <a href="https://www.linkedin.com/in/pamelahoneybortnick/">
+          Download my resume
+        </a> */}
       </div>
     </div>
   )
