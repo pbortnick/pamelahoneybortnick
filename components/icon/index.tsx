@@ -8,13 +8,19 @@ interface IconProps {
   size?: Sizes
   name: Icons
   color?: string
+  className?: string
 }
 
-export default function Icon({ name, color, size = 'md' }: IconProps) {
+export default function Icon({
+  name,
+  color,
+  size = 'md',
+  className = 'black',
+}: IconProps) {
   return (
     <span
       aria-label={name}
-      className={classNames(s.icon, s[size])}
+      className={classNames(s.icon, s[size], className && className)}
       role="img"
       style={
         {
