@@ -42,17 +42,10 @@
 }
 
 .icon {
-  opacity: 0;
-  visibility: hidden;
-
   position: absolute;
   right: 0;
-  transition: opacity 0.3s, visibility 0.3s;
-
-  &.show {
-    visibility: visible;
-    opacity: 1;
-  }
+  display: flex;
+  align-items: center;
 }
 
 @keyframes fadeIn {

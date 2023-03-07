@@ -25,6 +25,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-prettier": "4.0.0",
+    "framer-motion": "^10.1.0",
     "next": "13.1.2",
     "postcss": "^8.4.21",
     "postcss-flexbugs-fixes": "^5.0.2",
