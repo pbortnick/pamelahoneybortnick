@@ -58,23 +58,15 @@
     padding: 16px 8px 0;
   }
 
-  @media (--medium-up) {
-    /* &::before {
-      content: '';
-      position: absolute;
-      height: 2px;
-      width: 40%;
-      background: var(--offwhite);
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    } */
+  & .iconDivider {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
 
-    & .iconDivider {
-      position: absolute;
-      top: -12px;
-      left: 50%;
-      transform: translateX(-50%);
+    @media (--medium-up) {
+      display: block;
     }
   }
 }
