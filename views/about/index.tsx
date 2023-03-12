@@ -40,16 +40,15 @@ export default function AboutView() {
       </div>
       <div className={s.blurb}>
         <p>
-          I am a full stack software engineer who works for{' '}
+          I am a full stack software engineer. I currently work for{' '}
           <a
             href="https://www.hashicorp.com"
             rel="noopener noreferrer"
             target="_blank"
           >
             HashiCorp
-          </a>
-          . Go ahead...click that link! And explore some of my greatest work on
-          the website 😉.
+          </a>{' '}
+          on the web engineering team.
         </p>
         <br />
         <p>
