@@ -69,7 +69,7 @@ const MobileNavPanel = () => {
       onClickOutside={close}
       className={s.mobileBodyOuter}
     >
-      <RemoveScroll enabled={menuIsOpen} className={s.mobileBody}>
+      <RemoveScroll enabled={menuIsOpen} className={s.mobileBody} as="nav">
         <div className={s.top}>
           <Link className={s.mobileButton} href="/" aria-label="go to home">
             <Icon name="home" size="lg" color="maroon" />
