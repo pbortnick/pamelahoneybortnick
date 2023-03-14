@@ -110,7 +110,6 @@ const NavLinks = () => (
     <NavLink href="/" text="Home" />
     <NavLink href="/about" text="About" />
     {/* <NavLink href="/portfolio" text="Portfolio" /> */}
-    <NavLink href="/portfolio" text="Portfolio" />
     {/* <NavLink href="/resume" text="Resume" /> */}
   </>
 )
