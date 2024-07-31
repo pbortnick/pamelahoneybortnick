@@ -58,8 +58,7 @@ export default function AboutView() {
         <br />
         <p>
           This website was built with NextJS and designed with Figma. It is a
-          work in progress and will have some other fun stuff like icons,
-          animations, and more, coming soon!
+          work in work in progress.
         </p>
       </div>
       <div className={s.social}>
