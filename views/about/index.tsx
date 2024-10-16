@@ -15,7 +15,7 @@ export default function AboutView() {
             color="offwhite"
             className={s.iconDivider}
           />
-          <span>professional developer</span>
+          <span>professional engineer</span>
         </div>
         <div className={s.divider} />
         <div className={s.detail}>
@@ -25,7 +25,7 @@ export default function AboutView() {
             color="offwhite"
             className={s.iconDivider}
           />
-          <span>amateur web designer</span>
+          <span>amateur designer</span>
         </div>
         <div className={s.divider} />
         <div className={s.detail}>
