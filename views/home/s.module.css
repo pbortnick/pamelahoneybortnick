@@ -7,7 +7,7 @@
 
 .topGraphicContainer {
   position: absolute;
-  top: 0;
+  top: 40;
   right: -10px;
   display: flex;
   width: 180px;
