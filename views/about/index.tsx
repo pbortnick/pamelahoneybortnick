@@ -48,7 +48,7 @@ export default function AboutView() {
           >
             HashiCorp
           </a>{' '}
-          on the web engineering team.
+          on the Web Presence team.
         </p>
         <br />
         <p>
