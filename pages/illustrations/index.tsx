@@ -43,11 +43,11 @@ const illustrations = [
       "Since coming across a poster of Fallingwater when I was a teenager, I have always been fascinated by Frank Lloyd Wright's architecture. In fact, this year I will be getting married at the wedding venue on the Fallingwater property. Here are some of my illustrations of Frank Lloyd Wright's famous homes.",
     images: [
       {
-        src: '/illustrations/flw/hollyhock.png',
-        alt: 'Hollyhock House',
-        caption: 'Hollyhock House',
+        src: '/illustrations/flw/robie.png',
+        alt: 'Frederick C. Robie House',
+        caption: 'Frederick C. Robie House',
         width: 600,
-        height: 201,
+        height: 353,
       },
       {
         src: '/illustrations/flw/kentuck_knob.png',
@@ -57,18 +57,18 @@ const illustrations = [
         height: 289,
       },
       {
+        src: '/illustrations/flw/hollyhock.png',
+        alt: 'Hollyhock House',
+        caption: 'Hollyhock House',
+        width: 600,
+        height: 201,
+      },
+      {
         src: '/illustrations/flw/penfield.png',
         alt: 'The Louis Penfield House',
         caption: 'The Louis Penfield House',
         width: 600,
         height: 200,
-      },
-      {
-        src: '/illustrations/flw/robie.png',
-        alt: 'Frederick C. Robie House',
-        caption: 'Frederick C. Robie House',
-        width: 600,
-        height: 353,
       },
       {
         src: '/illustrations/flw/rosenbaum.png',
