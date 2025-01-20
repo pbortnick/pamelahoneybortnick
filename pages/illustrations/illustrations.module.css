@@ -12,6 +12,7 @@
 .dividerContainer {
   position: sticky;
   top: var(--nav-height);
+	z-index: 1;
 
   & hr {
     border: none;
