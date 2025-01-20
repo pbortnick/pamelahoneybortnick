@@ -58,9 +58,13 @@
 
 .illustrationHeader {
   display: grid;
-  grid-template-columns: min-content 1fr;
   align-items: center;
   gap: 12px;
+	grid-template-columns: 1fr;
+
+	@media (--medium-up) {
+		grid-template-columns: min-content 1fr;
+	}
 }
 
 .illustrationHeaderIcon {
