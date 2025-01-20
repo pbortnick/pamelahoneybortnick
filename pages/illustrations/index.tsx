@@ -1,9 +1,13 @@
 import Image from 'next/image'
 import s from './illustrations.module.css'
+import Icon from 'components/icon'
 
 export default function IllustrationsPage() {
   return (
     <main className={s.main}>
+      <div className={s.dividerContainer}>
+        <hr />
+      </div>
       <div className={s.body}>
         <div className={s.header}>
           <h1 className={s.heading}>Illustrations</h1>
@@ -13,24 +17,29 @@ export default function IllustrationsPage() {
             add more as I create them.
           </p>
         </div>
-        <div className={s.illustrations}>
+        <ul className={s.illustrations}>
           {illustrations.map(({ title, description, images }) => (
-            <div>
+            <li>
               <div className={s.illustrationHeader}>
-                <h2>{title}</h2>
-                {description && <p>{description}</p>}
-                <div className={s.images}>
-                  {images.map(({ caption, ...image }) => (
-                    <figure className={s.figure}>
-                      <Image {...image} />
-                      <figcaption>{caption}</figcaption>
-                    </figure>
-                  ))}
-                </div>
+                <Icon name="stirrer" className={s.illustrationHeaderIcon} />
+                <h2 className={s.illustrationHeaderTitle}>{title}</h2>
+                {description && (
+                  <p className={s.illustrationHeaderDescription}>
+                    {description}
+                  </p>
+                )}
               </div>
-            </div>
+              <div className={s.images}>
+                {images.map(({ caption, ...image }) => (
+                  <figure className={s.figure}>
+                    <Image {...image} />
+                    <figcaption>{caption}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </main>
   )
@@ -38,9 +47,9 @@ export default function IllustrationsPage() {
 
 const illustrations = [
   {
-    title: 'Frank Lloyd Wright homes',
+    title: 'Frank Lloyd Wright Homes',
     description:
-      "Since coming across a poster of Fallingwater when I was a teenager, I have always been fascinated by Frank Lloyd Wright's architecture. In fact, this year I will be getting married at the wedding venue on the Fallingwater property. Here are some of my illustrations of Frank Lloyd Wright's famous homes.",
+      "Since encountering a poster of Fallingwater when I was a teenager, I have always been fascinated by Frank Lloyd Wright's architecture. In fact, this year I will be getting married at the wedding venue on the Fallingwater property. Here are some of my illustrations of Frank Lloyd Wright's famous homes.",
     images: [
       {
         src: '/illustrations/flw/robie.png',

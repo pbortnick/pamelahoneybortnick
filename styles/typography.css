@@ -62,7 +62,7 @@
 .body-light {
 	font-weight: 300;
 	font-family: var(--body-font);
-	font-size: var(----body-light);
+	font-size: var(--body-light);
 }
 
 .body {
