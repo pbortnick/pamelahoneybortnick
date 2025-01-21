@@ -2,6 +2,7 @@
   composes: page-height from global;
   background: var(--sage-medium);
   position: relative;
+	color: var(--black);
 
   & p {
     width: 100%;

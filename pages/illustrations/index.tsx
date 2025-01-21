@@ -21,7 +21,11 @@ export default function IllustrationsPage() {
           {illustrations.map(({ title, description, images }) => (
             <li>
               <div className={s.illustrationHeader}>
-                <Icon name="stirrer" className={s.illustrationHeaderIcon} />
+                <Icon
+                  name="stirrer"
+                  className={s.illustrationHeaderIcon}
+                  color="black"
+                />
                 <h2 className={s.illustrationHeaderTitle}>{title}</h2>
                 {description && (
                   <p className={s.illustrationHeaderDescription}>
