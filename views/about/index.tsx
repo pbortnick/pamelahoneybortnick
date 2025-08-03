@@ -40,7 +40,7 @@ export default function AboutView() {
       </div>
       <div className={s.blurb}>
         <p>
-          I am a full stack software engineer. I currently work for{' '}
+          Pamela is a full stack software engineer who works at{' '}
           <a
             href="https://www.hashicorp.com"
             rel="noopener noreferrer"
@@ -52,8 +52,7 @@ export default function AboutView() {
         </p>
         <br />
         <p>
-          I am a team player and a perpetual learner. I enjoy seeing live music
-          and am a connoisseur of prestige television.
+          In her free time, Pamela enjoys picking up new hobbies, seeing live music, and playing with her adorable little beagle named Rummi.
         </p>
         <br />
         <p>
