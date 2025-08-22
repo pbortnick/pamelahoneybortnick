@@ -1,0 +1,41 @@
+.contact {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: var(--padding);
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.heading {
+	font-size: var(--font-size-large);
+}
+
+.email,
+.socials {
+	border-radius: var(--border-radius);
+	padding: var(--padding);
+}
+
+.email {
+	flex-grow: 1;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: var(--secondary);
+	color: var(--primary);
+}
+
+.socials {
+	color: var(--text);
+	background-color: var(--primary);
+	padding-left: var(--padding);
+	padding-right: var(--padding);
+	display: flex;
+	justify-content: space-between;
+}

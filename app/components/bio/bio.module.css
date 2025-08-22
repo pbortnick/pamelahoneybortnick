@@ -1,0 +1,16 @@
+.bio {
+	height: 100%;
+	border-radius: var(--border-radius);
+	background-color: var(--text);
+	color: var(--primary);
+	display: flex;
+	justify-content: end;
+	gap: var(--spacing-medium);
+	flex-direction: column;
+	padding: 144px var(--padding) var(--padding);
+}
+
+.bioText {
+	font-size: var(--font-size-x-small);
+	margin: 0;
+}

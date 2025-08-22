@@ -1,0 +1,14 @@
+.profile {
+	height: 100%;
+	border-radius: var(--border-radius);
+	background-color: var(--primary);
+	display: flex;
+	align-items: flex-end;
+	justify-content: end;
+}
+
+.profileImage {
+	border-bottom-right-radius: var(--border-radius);
+	max-width: 100%;
+	height: auto;
+}

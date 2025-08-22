@@ -1,0 +1,20 @@
+.header {
+	padding: var(--spacing-large) var(--padding) 0;
+}
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--primary);
+	padding: var(--padding);
+	color: var(--text);
+	border-radius: var(--border-radius);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: flex-start;
+}
+
+.link {
+	font-family: var(--font-anonymous-pro);
+}

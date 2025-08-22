@@ -1,0 +1,25 @@
+.header {
+	border-radius: var(--border-radius);
+	background-color: var(--primary);
+	padding: var(--padding);
+	display: flex;
+	flex-direction: column;
+	gap: 72px;
+}
+
+.headerText {
+	color: var(--text);
+	font-size: var(--font-size-large);
+
+	@media (min-width: 1200px) {
+		font-size: var(--font-size-x-large);
+	}
+}
+
+.graphic {
+	align-self: flex-end;
+
+	& path {
+		stroke: var(--text);
+	}
+}
