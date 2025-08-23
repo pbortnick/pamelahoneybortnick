@@ -5,8 +5,7 @@ const Bio = () => {
 		<div className={s.bio}>
 			<p className={s.bioText}>
 				Pamela Bortnick is a full stack software engineer with over 9 years of
-				experience. She provides excellence in web presence. She also dabbles in
-				design.
+				experience. She’s passionate about delivering exceptional digital experiences and brings a sharp eye for detail, both in code and design.
 			</p>
 			<p className={s.bioText}>
 				Pamela loves to learn and pick up new hobbies and skills. She spends her
