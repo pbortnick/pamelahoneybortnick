@@ -4,6 +4,10 @@
 	gap: var(--padding);
 	padding: var(--padding);
 	font-family: var(--font-anonymous-pro);
+
+	@media (--max-width: 767px) {
+		padding-bottom: 48px;
+	}
 }
 
 .header {

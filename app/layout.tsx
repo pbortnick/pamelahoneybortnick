@@ -22,8 +22,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<Nav />
-			<body className={anonymousPro.variable}>{children}</body>
+			<body className={anonymousPro.variable}>
+				<Nav />
+				{children}
+			</body>
 		</html>
 	);
 }
