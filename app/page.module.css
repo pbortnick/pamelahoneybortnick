@@ -61,3 +61,8 @@
 		grid-column: 9 / -1;
 	}
 }
+
+
+.footer {
+	grid-column: 1 / -1;
+}
