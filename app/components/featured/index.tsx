@@ -10,12 +10,7 @@ const Featured = () => {
 				<ArrowUpRightIcon color="var(--primary)" size={24} />
 			</div>
 			<div className={s.featuredImage}>
-				<Image
-					src={require("./featured.png")}
-					width={399}
-					height={269}
-					alt=""
-				/>
+				<Image src="/featured.png" width={1600} height={534} alt="" />
 			</div>
 		</a>
 	);

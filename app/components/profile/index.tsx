@@ -5,10 +5,10 @@ const Profile = () => {
 	return (
 		<div className={s.profile}>
 			<Image
-				src={require("./profile.png")}
+				src="/profile.png"
 				alt="Profile Picture"
-				width={325}
-				height={305}
+				width={1397}
+				height={1422}
 				className={s.profileImage}
 			/>
 		</div>
