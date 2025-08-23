@@ -8,8 +8,7 @@ const IllustrationsPage = () => {
 				<h1 className={s.headerTitle}>Illustrations</h1>
 				<p className={s.headerDescription}>
 					I&apos;ve found illustrating to be a great way to relax while
-					expressing my creativity. Here are some of my illustrations. I will
-					continue to add more as I create them.
+					expressing my creativity.
 				</p>
 			</div>
 			<ul className={s.illustrationsList}>
