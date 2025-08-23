@@ -5,10 +5,12 @@
 	display: flex;
 	align-items: flex-end;
 	justify-content: end;
+
 }
 
 .profileImage {
 	border-bottom-right-radius: var(--border-radius);
-	max-width: 100%;
+	max-width: 60%;
 	height: auto;
+	padding-top: var(--padding);
 }
