@@ -3,7 +3,6 @@ import { Contact } from "./components/contact";
 import { Featured } from "./components/featured";
 import { Header } from "./components/header";
 import { Profile } from "./components/profile";
-import { Footer } from "./components/footer";
 import s from "./page.module.css";
 
 export default function Home() {

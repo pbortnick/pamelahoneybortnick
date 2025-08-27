@@ -1,0 +1,16 @@
+.buttonLink {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	padding: 10px;
+	background: var(--text);
+	color: var(--primary);
+	font-size: var(--font-size-x-small);
+	text-decoration: none;
+	border-radius: 8px;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
