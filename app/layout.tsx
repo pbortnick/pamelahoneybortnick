@@ -2,6 +2,7 @@ import { Nav } from "./components/nav";
 import { Anonymous_Pro } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
+import { Footer } from "./components/footer";
 
 const anonymousPro = Anonymous_Pro({
 	weight: ["400", "700"],
@@ -25,6 +26,9 @@ export default function RootLayout({
 			<body className={anonymousPro.variable}>
 				<Nav />
 				{children}
+				<div className="footer">
+					<Footer />
+				</div>
 			</body>
 		</html>
 	);

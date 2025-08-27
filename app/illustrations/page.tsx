@@ -45,9 +45,7 @@ const illustrations: Array<{
 	}>;
 }> = [
 	{
-		title: "Frank Lloyd Wright Homes",
-		description:
-			"Ever since encountering a poster of Fallingwater when I was a teenager, I have always been fascinated by Frank Lloyd Wright's architecture. In fact, this year I will be getting married at the wedding venue on the Fallingwater property. Here are some of my illustrations of Frank Lloyd Wright's famous homes.",
+		title: "Frank Lloyd Wright",
 		images: [
 			{
 				src: "/illustrations/flw/robie.png",

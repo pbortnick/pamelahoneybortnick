@@ -1,0 +1,11 @@
+.separatorContainer {
+	padding-left: var(--padding);
+	padding-right: var(--padding);
+}
+
+.separator {
+	width: 100%;
+	background-color: var(--secondary);
+	height: 4px;
+	border-radius: 20px;
+}

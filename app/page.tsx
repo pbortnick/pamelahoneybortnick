@@ -24,9 +24,6 @@ export default function Home() {
 			<div className={s.featured}>
 				<Featured />
 			</div>
-			<div className={s.footer}>
-				<Footer />
-			</div>
 		</div>
 	);
 }
