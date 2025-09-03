@@ -11,11 +11,13 @@
 	--font-size-small: 20px;
 	--font-size-x-small: 16px;
 
-	--spacing-small: 8px;
-	--spacing-medium: 16px;
-	--spacing-large: 24px;
+	--spacing-01: 8px;
+	--spacing-02: 16px;
+	--spacing-03: 24px;
+	--spacing-04: 32px;
+	--spacing-05: 96px;
 
-	--padding: var(--spacing-large);
+	--padding: var(--spacing-03);
 }
 
 html,

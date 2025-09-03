@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArrowUpRightIcon } from "@phosphor-icons/react/ssr";
 import s from "./button.module.css";
 
@@ -8,14 +9,16 @@ interface ButtonLinkProps {
 }
 
 const ButtonLink = ({ text, href, opensNewTab }: ButtonLinkProps) => (
-	<a
+	<Link
 		href={href}
 		className={s.buttonLink}
 		target={opensNewTab ? "_blank" : undefined}
 	>
-		{text}
-		{opensNewTab && <ArrowUpRightIcon color="var(--primary)" size={12} />}
-	</a>
+		<div className={s.content}>
+			{text}
+			{opensNewTab && <ArrowUpRightIcon color="var(--primary)" size={12} />}
+		</div>
+	</Link>
 );
 
 export { ButtonLink };

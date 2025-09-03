@@ -13,7 +13,7 @@ const anonymousPro = Anonymous_Pro({
 export const metadata: Metadata = {
 	title: "Pamela Honey Bortnick",
 	description:
-		"Pamela Bortnick is a full stack software engineer with over 9 years of experience. She provides excellence in web presence. She also dabbles in design. Pamela loves to learn and pick up new hobbies and skills. She spends her free time seeing live music and playing with her adorable little beagle named Rummi",
+		"Pamela Bortnick is a full stack software engineer with over 9 years of experience.",
 };
 
 export default function RootLayout({

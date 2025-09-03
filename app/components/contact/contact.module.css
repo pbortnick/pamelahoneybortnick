@@ -22,6 +22,7 @@
 }
 
 .email {
+	gap: var(--spacing-02);
 	flex-grow: 1;
 	text-decoration: none;
 	display: flex;
