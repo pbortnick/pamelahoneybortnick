@@ -4,8 +4,7 @@
 	padding: var(--padding);
 
 	& img {
-		max-height: 100px;
-		/* width: 30%; */
+		max-height: 80px;
 		width: auto;
 		height: auto;
 	}

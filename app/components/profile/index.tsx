@@ -10,6 +10,7 @@ const Profile = () => {
 				width={1397}
 				height={1422}
 				className={s.profileImage}
+				priority
 			/>
 		</div>
 	);

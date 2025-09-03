@@ -37,6 +37,7 @@ const Nav = () => {
 						<NavigationMenu.Trigger
 							className={s.mobileTrigger}
 							aria-label="Menu"
+							data-state="open"
 						>
 							Menu <CaretDownIcon aria-hidden />
 						</NavigationMenu.Trigger>
@@ -50,7 +51,6 @@ const Nav = () => {
 							<NavigationMenu.Link
 								href="mailto:pbortnick@gmail.com"
 								className={s.buttonLink}
-								target="_blank"
 							>
 								<div className={s.buttonLinkContent}>
 									Contact me

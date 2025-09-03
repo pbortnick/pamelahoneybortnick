@@ -13,13 +13,7 @@ const Footer = () => {
 				className={s.mobileHide}
 			/>
 			<Image src="/footer/rummi-3.png" width={666} height={826} alt="" />
-			<Image
-				src="/footer/rummi-4.png"
-				width={2434}
-				height={2513}
-				alt=""
-				className={s.mobileHide}
-			/>
+			<Image src="/footer/rummi-4.png" width={2434} height={2513} alt="" />
 			<Image src="/footer/rummi-5.png" width={3024} height={4032} alt="" />
 		</div>
 	);

@@ -13,7 +13,7 @@ const anonymousPro = Anonymous_Pro({
 export const metadata: Metadata = {
 	title: "Pamela Honey Bortnick",
 	description:
-		"Pamela Bortnick is a full stack software engineer with over 9 years of experience.",
+		"Pamela Bortnick is a full stack software engineer with over 9 years of experience. Using her skills in JavaScript, TypeScript, Next.js, CSS, GraphQL, and more, she builds performant, accessible, and user-friendly web applications.",
 };
 
 export default function RootLayout({
@@ -23,6 +23,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<meta
+				name="description"
+				content="Pamela Bortnick is a full stack software engineer with over 9 years of experience. Using her skills in JavaScript, TypeScript, Next.js, CSS, GraphQL, and more, she builds performant, accessible, and user-friendly web applications."
+			/>
 			<body className={anonymousPro.variable}>
 				<Nav />
 				{children}
