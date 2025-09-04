@@ -17,11 +17,11 @@ export default function Home() {
 			<div className={s.contact}>
 				<Contact />
 			</div>
-			<div className={s.bio}>
-				<Bio />
-			</div>
 			<div className={s.featured}>
 				<Featured />
+			</div>
+			<div className={s.bio}>
+				<Bio />
 			</div>
 		</div>
 	);

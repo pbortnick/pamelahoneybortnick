@@ -46,7 +46,7 @@
 	}
 }
 
-.bio {
+.featured {
 	grid-column: 1 / -1;
 
 	@media (min-width: 768px) {
@@ -54,14 +54,14 @@
 	}
 
 	@media (min-width: 1200px) {
-		grid-column: 1 / 9;
+		grid-column: 1 / 6;
 	}
 }
 
-.featured {
+.bio {
 	grid-column: 1 / -1;
 
 	@media (min-width: 1200px) {
-		grid-column: 9 / -1;
+		grid-column: 6 / -1;
 	}
 }
