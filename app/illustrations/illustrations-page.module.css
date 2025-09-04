@@ -6,27 +6,22 @@
 
 .header {
 	display: flex;
-	align-items: center;
 	flex-direction: column;
 	gap: var(--spacing-02);
 	padding-bottom: var(--spacing-03);
-	text-align: center;
-	background-color: var(--text);
 	color: var(--primary);
 	border-radius: var(--border-radius);
-	padding: var(--padding);
+	padding: var(--padding) 0;
 	margin-bottom: var(--spacing-02);
 }
 
 .headerTitle {
-	font-size: var(--font-size-large);
 	font-weight: bold;
 }
 
 .headerDescription {
 	font-size: var(--font-size-x-small);
 	color: var(--text-secondary);
-	text-align: center;
 	max-width: 800px;
 }
 

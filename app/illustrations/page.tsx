@@ -5,7 +5,7 @@ const IllustrationsPage = () => {
 	return (
 		<div className={s.page}>
 			<div className={s.header}>
-				<h1 className={s.headerTitle}>Illustrations</h1>
+				<h1 className={s.headerTitle}>Pamela&apos;s Illustrations</h1>
 				<p className={s.headerDescription}>
 					I&apos;ve found illustrating to be a great way to relax while
 					expressing my creativity.
