@@ -12,8 +12,8 @@ const Nav = () => {
 				</Link>
 				<NavigationMenu.List className={s.navList}>
 					<NavigationMenu.Item className={s.desktop}>
-						<NavigationMenu.Link href="/resume" className={s.link}>
-							Resume
+						<NavigationMenu.Link href="/experience" className={s.link}>
+							Experience
 						</NavigationMenu.Link>
 					</NavigationMenu.Item>
 					<NavigationMenu.Item className={s.desktop}>
@@ -42,8 +42,8 @@ const Nav = () => {
 							Menu <CaretDownIcon aria-hidden />
 						</NavigationMenu.Trigger>
 						<NavigationMenu.Content className={s.mobileMenuContent}>
-							<NavigationMenu.Link href="/resume" className={s.link}>
-								Resume
+							<NavigationMenu.Link href="/experience" className={s.link}>
+								Experience
 							</NavigationMenu.Link>
 							<NavigationMenu.Link href="/illustrations" className={s.link}>
 								Illustrations

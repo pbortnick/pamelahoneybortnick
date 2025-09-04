@@ -1,15 +1,15 @@
-import s from "./resume-page.module.css";
+import s from "./experience-page.module.css";
 
-const ResumePage = () => {
+const ExperiencePage = () => {
 	return (
 		<div className={s.page}>
-			<div className={s.resume}>
-				<h1 className={s.title}>Pamela Bortnick&apos;s Resume</h1>
+			<div className={s.experience}>
+				<h1 className={s.title}>Pamela Bortnick&apos;s Experience</h1>
 				<ul>
 					{items.length ? (
 						items.map(
 							({ company, role, duration, descriptionItems }, index) => (
-								<li key={index} className={s.resumeItem}>
+								<li key={index} className={s.experienceItem}>
 									<div className={s.header}>
 										<h2 className={s.company}>{company}</h2>
 										<h3 className={s.role}>{role}</h3>
@@ -41,4 +41,4 @@ const items: Array<{
 	descriptionItems: string[];
 }> = [];
 
-export default ResumePage;
+export default ExperiencePage;
