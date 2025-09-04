@@ -37,11 +37,10 @@ const Nav = () => {
 						<NavigationMenu.Trigger
 							className={s.mobileTrigger}
 							aria-label="Menu"
-							data-state="open"
 						>
 							Menu <CaretDownIcon aria-hidden />
 						</NavigationMenu.Trigger>
-						<NavigationMenu.Content className={s.mobileMenuContent}>
+						<NavigationMenu.Content className={s.mobileMenuContent} forceMount>
 							<NavigationMenu.Link href="/experience" className={s.link}>
 								Experience
 							</NavigationMenu.Link>
