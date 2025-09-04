@@ -65,8 +65,7 @@
 	animation-duration: 250ms;
 	animation-timing-function: ease;
 	background: var(--primary);
-	border-bottom-left-radius: var(--border-radius);
-	border-bottom-right-radius: var(--border-radius);
+	border-radius: var(--border-radius);
 	padding: var(--spacing-01);
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 	display: flex;
