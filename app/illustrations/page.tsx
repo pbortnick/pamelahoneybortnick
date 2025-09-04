@@ -45,7 +45,7 @@ const illustrations: Array<{
 	}>;
 }> = [
 	{
-		title: "Frank Lloyd Wright",
+		title: "Frank Lloyd Wright Homes",
 		images: [
 			{
 				src: "/illustrations/flw/robie.png",
