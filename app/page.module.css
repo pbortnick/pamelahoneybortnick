@@ -60,8 +60,14 @@
 
 .bio {
 	grid-column: 1 / -1;
+	grid-row: 3;
+
+	@media (min-width: 768px) {
+		grid-row: 2;
+	}
 
 	@media (min-width: 1200px) {
+		grid-row: auto;
 		grid-column: 6 / -1;
 	}
 }
