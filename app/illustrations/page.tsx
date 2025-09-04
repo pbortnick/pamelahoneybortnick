@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Image from "next/image";
 import s from "./illustrations-page.module.css";
 
@@ -11,24 +12,24 @@ const IllustrationsPage = () => {
 					expressing my creativity.
 				</p>
 			</div>
-			<ul className={s.illustrationsList}>
-				{illustrations.map(({ title, description, images }, idx) => (
-					<li key={idx} className={s.illustrationsListItem}>
-						<div className={s.illustrationHeader}>
-							<h2>{title}</h2>
-							{description && <p>{description}</p>}
-						</div>
-						<div className={s.illustrationsListItemImages}>
-							{images.map(({ caption, ...image }) => (
-								<figure className={s.figure} key={caption}>
-									<Image {...image} className={s.image} />
-									<figcaption>{caption}</figcaption>
-								</figure>
-							))}
-						</div>
-					</li>
-				))}
-			</ul>
+			{illustrations.map(({ title, description, images }, idx) => (
+				<Fragment key={idx}>
+					<div className={s.illustrationHeader}>
+						<h2>{title}</h2>
+						{description && <p>{description}</p>}
+					</div>
+					{images.map(({ caption, ...image }) => (
+						<figure className={s.figure} key={caption}>
+							<Image
+								{...image}
+								className={s.image}
+								alt={`${caption} illustration`}
+							/>
+							<figcaption>{caption}</figcaption>
+						</figure>
+					))}
+				</Fragment>
+			))}
 		</div>
 	);
 };
