@@ -1,5 +1,7 @@
 .header {
 	padding: var(--spacing-03) var(--padding) 0;
+	max-width: var(--page-width);
+	margin: 0 auto;
 }
 
 .nav {

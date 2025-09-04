@@ -18,6 +18,8 @@
 	--spacing-05: 96px;
 
 	--padding: var(--spacing-03);
+
+	--page-width: 1480px;
 }
 
 html,

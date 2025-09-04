@@ -5,6 +5,8 @@
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	gap: var(--padding);
+	max-width: var(--page-width);
+	margin: 0 auto;
 }
 
 .title {

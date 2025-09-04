@@ -2,6 +2,8 @@
 	display: flex;
 	justify-content: space-between;
 	padding: var(--padding);
+	max-width: var(--page-width);
+	margin: 0 auto;
 
 	& img {
 		max-height: 100px;

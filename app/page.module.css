@@ -4,6 +4,8 @@
 	gap: var(--padding);
 	padding: var(--padding);
 	font-family: var(--font-anonymous-pro);
+	max-width: var(--page-width);
+	margin: 0 auto;
 
 	@media (--max-width: 767px) {
 		padding-bottom: 48px;
