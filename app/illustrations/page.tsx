@@ -42,7 +42,7 @@ const illustrations: Array<{
 	}>;
 }> = [
 	{
-		collection: "Frank Lloyd Wright",
+		collection: "Frank Lloyd Wright Works",
 		images: [
 			{
 				src: "/illustrations/flw/robie.png",

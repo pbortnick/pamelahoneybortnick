@@ -1,25 +1,21 @@
-import Link from "next/link";
 import { NavigationMenu } from "radix-ui";
 import { ArrowUpRightIcon, CaretDownIcon } from "@phosphor-icons/react/ssr";
+import { NavItem } from "./nav-item";
 import s from "./nav.module.css";
 
 const Nav = () => {
 	return (
 		<div className={s.header}>
 			<NavigationMenu.Root className={s.nav}>
-				<Link href="/" className={s.link}>
+				<NavItem href="/">
 					<i>Pamela</i> Bortnick
-				</Link>
+				</NavItem>
 				<NavigationMenu.List className={s.navList}>
 					<NavigationMenu.Item className={s.desktop}>
-						<NavigationMenu.Link href="/experience" className={s.link}>
-							Experience
-						</NavigationMenu.Link>
+						<NavItem href="/experience">Experience</NavItem>
 					</NavigationMenu.Item>
 					<NavigationMenu.Item className={s.desktop}>
-						<NavigationMenu.Link href="/illustrations" className={s.link}>
-							Illustrations
-						</NavigationMenu.Link>
+						<NavItem href="/illustrations">Illustrations</NavItem>
 					</NavigationMenu.Item>
 					<NavigationMenu.Item className={s.desktop}>
 						<NavigationMenu.Link
@@ -41,12 +37,8 @@ const Nav = () => {
 							Menu <CaretDownIcon aria-hidden />
 						</NavigationMenu.Trigger>
 						<NavigationMenu.Content className={s.mobileMenuContent}>
-							<NavigationMenu.Link href="/experience" className={s.link}>
-								Experience
-							</NavigationMenu.Link>
-							<NavigationMenu.Link href="/illustrations" className={s.link}>
-								Illustrations
-							</NavigationMenu.Link>
+							<NavItem href="/experience">Experience</NavItem>
+							<NavItem href="/illustrations">Illustrations</NavItem>
 							<NavigationMenu.Link
 								href="mailto:pbortnick@gmail.com"
 								className={s.buttonLink}
