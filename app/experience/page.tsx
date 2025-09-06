@@ -4,69 +4,97 @@ const ExperiencePage = () => {
 	return (
 		<div className={s.page}>
 			<h1 className={s.title}>Pamela&apos;s Experience</h1>
-			{items.length ? (
-				items.map(({ company, roles, descriptionItems }, index) => (
-					<div key={index} className={s.experienceItem}>
-						<div className={s.header}>
-							<h2 className={s.company}>{company}</h2>
-							{roles.map(({ name, duration }, roleIndex) => (
-								<p className={s.role} key={roleIndex}>
-									{name} | <i>{duration}</i>
-								</p>
-							))}
-						</div>
-						{descriptionItems && (
-							<ul className={s.descriptionList}>
-								{descriptionItems.map((desc, descIndex) => (
-									<li key={descIndex} className={s.descriptionItem}>
-										{desc}
-									</li>
-								))}
-							</ul>
-						)}
+			<div className={s.education}>
+				<h2 className={s.heading}>Education</h2>
+				<div className={s.header}>
+					<h3 className={s.company}>Binghamton University</h3>
+					<p className={s.role}>
+						Bachelor of Science in Bioengineering | <i>2009 - 2013</i>
+					</p>
+				</div>
+			</div>
+			<div className={s.current}>
+				<h2 className={s.heading}>Current</h2>
+				<div className={s.header}>
+					<h2 className={s.company}>{current.company}</h2>
+					{current.roles.map(({ name, duration }, roleIndex) => (
+						<p className={s.role} key={roleIndex}>
+							{name} | <i>{duration}</i>
+						</p>
+					))}
+				</div>
+				<ul className={s.descriptionList}>
+					{current.descriptionItems.map((desc, descIndex) => (
+						<li key={descIndex} className={s.descriptionItem}>
+							{desc}
+						</li>
+					))}
+				</ul>
+			</div>
+			{pastItems.map(({ company, roles, descriptionItems }, index) => (
+				<div key={index} className={s.experienceItem}>
+					<div className={s.header}>
+						<h2 className={s.company}>{company}</h2>
+						{roles.map(({ name, duration }, roleIndex) => (
+							<p className={s.role} key={roleIndex}>
+								{name} | <i>{duration}</i>
+							</p>
+						))}
 					</div>
-				))
-			) : (
-				<p>Coming soon</p>
-			)}
+					{descriptionItems && (
+						<ul className={s.descriptionList}>
+							{descriptionItems.map((desc, descIndex) => (
+								<li key={descIndex} className={s.descriptionItem}>
+									{desc}
+								</li>
+							))}
+						</ul>
+					)}
+				</div>
+			))}
 		</div>
 	);
 };
 
-const items: Array<{
+const current: {
 	company: string;
 	roles: { name: string; duration: string }[];
-	descriptionItems?: string[];
+	descriptionItems: string[];
+} = {
+	company: "HashiCorp",
+	roles: [
+		{
+			name: "Sr. Web Engineer I",
+			duration: "Nov 2024 - Present",
+		},
+		{
+			name: "Web Engineer II",
+			duration: "May 2023 - Nov 2024",
+		},
+		{
+			name: "Web Engineer I",
+			duration: "Aug 2021 - May 2023",
+		},
+	],
+	descriptionItems: [
+		"Built and maintained the HashiCorp website using Next.js, TypeScript, and CSS modules.",
+		"Configured and managed the CMS to provide a seamless content editing experience and optimized content delivery using GraphQL.",
+		"Improved developer experience and brand integration by creating and maintaining a design system using Storybook.",
+		"Built a faceted search experience using Algolia to help users find relevant content quickly and easily.",
+		"Implemented internationalization (i18n) to support multiple languages and improve accessibility for a global audience.",
+	],
+};
+
+const pastItems: Array<{
+	company: string;
+	roles: { name: string; duration: string }[];
+	descriptionItems: string[];
 }> = [
-	{
-		company: "HashiCorp",
-		roles: [
-			{
-				name: "Sr. Web Engineer I",
-				duration: "Nov 2024 - Present",
-			},
-			{
-				name: "Web Engineer II",
-				duration: "May 2023 - Nov 2024",
-			},
-			{
-				name: "Web Engineer I",
-				duration: "Aug 2021 - May 2023",
-			},
-		],
-		descriptionItems: [
-			"Built and maintained the HashiCorp website using Next.js, TypeScript, and CSS modules.",
-			"Configured and managed the CMS to provide a seamless content editing experience and optimized content delivery using GraphQL.",
-			"Improved developer experience and brand integration by creating and maintaining a design system using Storybook.",
-			"Built a faceted search experience using Algolia to help users find relevant content quickly and easily.",
-			"Implemented internationalization (i18n) to support multiple languages and improve accessibility for a global audience.",
-		],
-	},
 	{
 		company: "Self Employed",
 		roles: [
 			{
-				name: "Freelance Software Engineer",
+				name: "Freelance Engineer",
 				duration: "Nov 2020 - Jul 2021",
 			},
 		],
