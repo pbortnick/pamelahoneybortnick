@@ -7,10 +7,6 @@ const IllustrationsPage = () => {
 		<div className={s.page}>
 			<div className={s.header}>
 				<h1 className={s.headerTitle}>Pamela&apos;s Illustrations</h1>
-				<p className={s.headerDescription}>
-					I&apos;ve found illustrating to be a great way to relax while
-					expressing my creativity.
-				</p>
 			</div>
 			{illustrations.map(({ title, description, images }, idx) => (
 				<Fragment key={idx}>
@@ -18,7 +14,7 @@ const IllustrationsPage = () => {
 						<h2>{title}</h2>
 						{description && <p>{description}</p>}
 					</div>
-					{images.map(({ caption, ...image }) => (
+					{images.map(({ caption, ...image }, idx) => (
 						<figure className={s.figure} key={caption}>
 							<Image
 								{...image}

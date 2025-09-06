@@ -16,7 +16,6 @@
 	gap: var(--spacing-02);
 	color: var(--primary);
 	border-radius: var(--border-radius);
-	margin-bottom: var(--spacing-02);
 	padding: var(--padding) 0;
 }
 
@@ -44,19 +43,26 @@
 }
 
 .illustrationHeader {
-	width: 100%;
+	background: var(--primary);
+	color: var(--text);
+	border-radius: var(--border-radius);
+	padding: var(--padding);
 	display: flex;
 	flex-direction: column;
 	gap: var(--spacing-01);
 	color: var(--primary);
-	grid-column: 1 / -1;
+	background-color: var(--primary);
+	grid-column: span 12;
+	border-radius: var(--border-radius);
+	padding: var(--padding);
+	color: var(--text);
 
-	& p {
-		width: 100%;
+	@media (min-width: 768px) {
+		grid-column: span 6;
+	}
 
-		@media (min-width: 768px) {
-			width: 80%;
-		}
+	@media (min-width: 1200px) {
+		grid-column: span 4;
 	}
 }
 
@@ -68,7 +74,6 @@
 .figure {
 	padding: var(--padding);
 	border-radius: var(--border-radius);
-	max-width: 100%;
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: column;
@@ -76,8 +81,12 @@
 	background: var(--secondary);
 	grid-column: span 12;
 
-	@media (min-width: 600px) {
+	@media (min-width: 768px) {
 		grid-column: span 6;
+	}
+
+	@media (min-width: 1200px) {
+		grid-column: span 4;
 	}
 }
 
