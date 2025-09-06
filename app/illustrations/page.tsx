@@ -8,11 +8,11 @@ const IllustrationsPage = () => {
 			<div className={s.header}>
 				<h1 className={s.headerTitle}>Pamela&apos;s Illustrations</h1>
 			</div>
-			{illustrations.map(({ title, description, images }, idx) => (
+			{illustrations.map(({ collection, images }, idx) => (
 				<Fragment key={idx}>
 					<div className={s.illustrationHeader}>
-						<h2>{title}</h2>
-						{description && <p>{description}</p>}
+						<h2 className={s.collection}>Collection</h2>
+						<h3>{collection}</h3>
 					</div>
 					{images.map(({ caption, ...image }) => (
 						<figure className={s.figure} key={caption}>
@@ -31,7 +31,7 @@ const IllustrationsPage = () => {
 };
 
 const illustrations: Array<{
-	title: string;
+	collection: string;
 	description?: string;
 	images: Array<{
 		src: string;
@@ -42,7 +42,7 @@ const illustrations: Array<{
 	}>;
 }> = [
 	{
-		title: "Frank Lloyd Wright",
+		collection: "Frank Lloyd Wright",
 		images: [
 			{
 				src: "/illustrations/flw/robie.png",

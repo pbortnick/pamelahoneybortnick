@@ -44,18 +44,14 @@
 
 .illustrationHeader {
 	background: var(--primary);
-	color: var(--text);
 	border-radius: var(--border-radius);
 	padding: var(--padding);
 	display: flex;
 	flex-direction: column;
 	gap: var(--spacing-01);
-	color: var(--primary);
-	background-color: var(--primary);
 	grid-column: span 12;
-	border-radius: var(--border-radius);
-	padding: var(--padding);
 	color: var(--text);
+	justify-content: space-between;
 
 	@media (min-width: 768px) {
 		grid-column: span 6;
