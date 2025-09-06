@@ -14,14 +14,14 @@ const IllustrationsPage = () => {
 						<h2>{title}</h2>
 						{description && <p>{description}</p>}
 					</div>
-					{images.map(({ caption, ...image }, idx) => (
+					{images.map(({ caption, ...image }) => (
 						<figure className={s.figure} key={caption}>
 							<Image
 								{...image}
 								className={s.image}
 								alt={`${caption} illustration`}
 							/>
-							<figcaption>{caption}</figcaption>
+							<figcaption className={s.caption}>{caption}</figcaption>
 						</figure>
 					))}
 				</Fragment>
@@ -42,7 +42,7 @@ const illustrations: Array<{
 	}>;
 }> = [
 	{
-		title: "Frank Lloyd Wright Homes",
+		title: "Frank Lloyd Wright",
 		images: [
 			{
 				src: "/illustrations/flw/robie.png",
@@ -85,6 +85,20 @@ const illustrations: Array<{
 				caption: "Taliesin West",
 				width: 600,
 				height: 169,
+			},
+			{
+				src: "/illustrations/flw/wright.png",
+				alt: "David & Gladys Wright House",
+				caption: "David & Gladys Wright House",
+				width: 904,
+				height: 257,
+			},
+			{
+				src: "/illustrations/flw/thomas.png",
+				alt: "Dana-Thomas House",
+				caption: "Dana-Thomas House",
+				width: 904,
+				height: 257,
 			},
 		],
 	},
