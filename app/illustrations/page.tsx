@@ -42,7 +42,7 @@ const illustrations: Array<{
 	}>;
 }> = [
 	{
-		collection: "Frank Lloyd Wright Works",
+		collection: "Frank Lloyd Wright",
 		images: [
 			{
 				src: "/illustrations/flw/robie.png",
@@ -99,6 +99,46 @@ const illustrations: Array<{
 				caption: "Dana-Thomas House",
 				width: 904,
 				height: 257,
+			},
+		],
+	},
+	{
+		collection: "Corn",
+		images: [
+			{
+				src: "/illustrations/corn/cornhole.png",
+				alt: "Cornhole",
+				caption: "Cornhole",
+				width: 257,
+				height: 256,
+			},
+			{
+				src: "/illustrations/corn/cornichons.png",
+				alt: "Cornichons",
+				caption: "Cornichons",
+				width: 138.5,
+				height: 245,
+			},
+			{
+				src: "/illustrations/corn/corn.png",
+				alt: "Corn",
+				caption: "Corn",
+				width: 215,
+				height: 335,
+			},
+			{
+				src: "/illustrations/corn/acorn.png",
+				alt: "Acorn",
+				caption: "Acorn",
+				width: 206,
+				height: 229,
+			},
+			{
+				src: "/illustrations/corn/unicorn.png",
+				alt: "Unicorn",
+				caption: "Unicorn",
+				width: 330,
+				height: 404,
 			},
 		],
 	},

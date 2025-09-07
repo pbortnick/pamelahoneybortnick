@@ -53,10 +53,6 @@
 	color: var(--text);
 	justify-content: space-between;
 
-	@media (min-width: 768px) {
-		grid-column: span 6;
-	}
-
 	@media (min-width: 1200px) {
 		grid-column: span 4;
 	}
@@ -87,8 +83,8 @@
 }
 
 .image {
-	width: 100%;
-	object-fit: cover;
+	max-width: 100%;
+	margin: 0 auto;
 	height: auto;
 }
 
