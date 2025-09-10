@@ -4,7 +4,7 @@
 	padding: var(--padding);
 	display: flex;
 	flex-direction: column;
-	gap: 72px;
+	gap: 120px;
 	height: 100%;
 	justify-content: space-between;
 }

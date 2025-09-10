@@ -48,8 +48,13 @@
 }
 
 .heading {
+	text-decoration: underline;
 	font-size: var(--font-size-large);
 	padding-bottom: var(--spacing-02);
+
+	@media (min-width: 768px) {
+		padding-bottom: 0;
+	}
 }
 
 .current {

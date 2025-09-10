@@ -9,6 +9,12 @@
 	margin: 0 auto;
 }
 
+.heading {
+	padding-bottom: 0;
+	text-decoration: underline;
+	padding-bottom: var(--spacing-02);
+}
+
 .header {
 	grid-column: 1 / -1;
 	display: flex;
