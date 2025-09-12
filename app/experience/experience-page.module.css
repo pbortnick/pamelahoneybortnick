@@ -23,8 +23,8 @@
 	min-height: 80vh;
 
 	@media (min-width: 768px) {
-		padding-left: var(--spacing-05);
-		padding-right: var(--spacing-05);
+		padding-left: var(--spacing-06);
+		padding-right: var(--spacing-06);
 	}
 }
 
