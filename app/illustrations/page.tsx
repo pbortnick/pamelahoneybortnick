@@ -121,8 +121,8 @@ const illustrations: Array<{
 			},
 			{
 				src: "/illustrations/corn/corn.png",
-				alt: "Corn",
-				caption: "Corn",
+				alt: "Corn on the cob",
+				caption: "Corn on the cob",
 				width: 172,
 				height: 268,
 			},
