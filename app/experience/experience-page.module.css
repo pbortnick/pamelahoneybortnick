@@ -16,7 +16,7 @@
 }
 
 .resume {
-	background-color: var(--secondary);
+	background-color: var(--secondary-light);
 	color: var(--primary);
 	border-radius: var(--border-radius);
 	padding: var(--spacing-04);
@@ -33,7 +33,7 @@
 	grid-column: span 12;
 	border-radius: var(--border-radius);
 	padding: var(--padding);
-	color: var(--text);
+	color: var(--secondary);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -58,7 +58,7 @@
 }
 
 .current {
-	background-color: var(--text);
+	background-color: var(--secondary);
 	grid-column: span 12;
 	border-radius: var(--border-radius);
 	padding: var(--padding);
@@ -74,7 +74,7 @@
 }
 
 .experienceItem {
-	background-color: var(--secondary);
+	background-color: var(--secondary-light);
 	grid-column: span 12;
 	border-radius: var(--border-radius);
 	padding: var(--padding);

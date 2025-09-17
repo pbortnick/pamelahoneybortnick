@@ -3,6 +3,7 @@ import { Contact } from "./components/contact";
 import { LinkBox } from "./components/link-box";
 import { Header } from "./components/header";
 import { Profile } from "./components/profile";
+import Honey from "./honey.svg";
 import s from "./page.module.css";
 
 export default function Home() {
@@ -18,8 +19,13 @@ export default function Home() {
 				<Contact />
 			</div>
 			<div className={s.links}>
-				<LinkBox title="Illustrations" url="/illustrations" />
-				<LinkBox title="Experience" url="/experience" />
+				<LinkBox title="Experience" url="/experience" theme="secondary-light" />
+				<LinkBox
+					title="Illustrations"
+					url="/illustrations"
+					theme="secondary"
+					graphic={<Honey />}
+				/>
 			</div>
 			<div className={s.bio}>
 				<Bio />

@@ -1,8 +1,8 @@
 :root {
 	--background: #b5c99a;
 	--primary: #862b0d;
-	--text: #ffc95f;
-	--secondary: #fff9c9;
+	--secondary: #ffc95f;
+	--secondary-light: #fff9c9;
 
 	--border-radius: 10px;
 
@@ -46,16 +46,17 @@ a {
 	color: inherit;
 }
 
-/* 
-@media (prefers-color-scheme: dark) {
-	html {
-		color-scheme: dark;
-	}
-} */
+.primary {
+	background-color: var(--primary);
+	color: var(--secondary);
+}
 
-/* @media (prefers-color-scheme: dark) {
-	:root {
-		--background: #0a0a0a;
-		--foreground: #ededed;
-	}
-} */
+.secondary {
+	background-color: var(--secondary);
+	color: var(--primary);
+}
+
+.secondary-light {
+	background-color: var(--secondary-light);
+	color: var(--primary);
+}

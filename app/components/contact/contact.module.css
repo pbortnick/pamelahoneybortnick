@@ -28,12 +28,12 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: var(--secondary);
+	background-color: var(--secondary-light);
 	color: var(--primary);
 }
 
 .socials {
-	color: var(--text);
+	color: var(--secondary);
 	background-color: var(--primary);
 	padding-left: var(--padding);
 	padding-right: var(--padding);

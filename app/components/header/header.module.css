@@ -10,7 +10,7 @@
 }
 
 .headerText {
-	color: var(--text);
+	color: var(--secondary);
 	font-size: var(--font-size-large);
 
 	@media (min-width: 1200px) {
@@ -22,6 +22,6 @@
 	align-self: flex-end;
 
 	& path {
-		stroke: var(--text);
+		stroke: var(--secondary);
 	}
 }

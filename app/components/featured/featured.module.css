@@ -10,7 +10,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: var(--secondary);
+	background-color: var(--secondary-light);
 	color: var(--primary);
 }
 

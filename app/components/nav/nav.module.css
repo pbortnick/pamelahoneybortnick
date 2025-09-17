@@ -10,7 +10,7 @@
 	align-items: center;
 	background-color: var(--primary);
 	padding: var(--spacing-02);
-	color: var(--text);
+	color: var(--secondary);
 	border-radius: var(--border-radius);
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	display: flex;
@@ -45,7 +45,7 @@
 	outline: none;
 	border: none;
 	background: none;
-	color: var(--text);
+	color: var(--secondary);
 	font-family: var(--font-anonymous-pro);
 	display: flex;
 	align-items: center;
@@ -85,7 +85,7 @@
 	width: max-content;
 
 	&:after {
-		background-color: var(--text);
+		background-color: var(--secondary);
 	}
 }
 
@@ -95,7 +95,7 @@
 	justify-content: center;
 	text-transform: uppercase;
 	padding: 10px;
-	background: var(--text);
+	background: var(--secondary);
 	color: var(--primary);
 	font-size: var(--font-size-x-small);
 	text-decoration: none;

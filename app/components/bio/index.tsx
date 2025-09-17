@@ -11,7 +11,7 @@ const Bio = () => {
 			</p>
 			<p className={s.bioText}>
 				Pamela loves to learn and pick up new hobbies and skills. She spends her
-				free time seeing reading, playing NYT games, seeing live music, and
+				free time reading, playing NYT games, seeing live music, and
 				hanging out with her 1 year old beagle named Rummi.
 			</p>
 		</div>
