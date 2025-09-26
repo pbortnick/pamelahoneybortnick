@@ -14,7 +14,6 @@ const ExperiencePage = () => {
 				</div>
 			</div>
 			<div className={s.current}>
-				<h2 className={s.heading}>Current</h2>
 				<div className={s.header}>
 					<h2 className={s.company}>{current.company}</h2>
 					{current.roles.map(({ name, duration }, roleIndex) => (
