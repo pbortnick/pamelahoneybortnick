@@ -1,9 +1,19 @@
+import { ButtonLink } from "../components/button";
 import s from "./experience-page.module.css";
 
 const ExperiencePage = () => {
 	return (
 		<div className={s.page}>
-			<h1 className={s.title}>Pamela&apos;s Experience</h1>
+			<div className={s.titleSection}>
+				<h1 className={s.title}>Pamela&apos;s Experience</h1>
+				<div className={s.resume}>
+					<ButtonLink
+						href="/resume.pdf"
+						text="Download Resume"
+						theme="light"
+					/>
+				</div>
+			</div>
 			<div className={s.education}>
 				<h2 className={s.heading}>Education</h2>
 				<div className={s.header}>
@@ -13,8 +23,30 @@ const ExperiencePage = () => {
 					</p>
 				</div>
 			</div>
+			<div className={s.skills}>
+				<h2 className={s.heading} style={{ textDecoration: "none" }}>
+					Skills
+				</h2>
+				<ul className={s.skillsList}>
+					<li className={s.role}>JavaScript</li>
+					<li className={s.role}>TypeScript</li>
+					<li className={s.role}>Next.js</li>
+					<li className={s.role}>React</li>
+					<li className={s.role}>GraphQL</li>
+					<li className={s.role}>CSS</li>
+					<li className={s.role}>CSS Modules</li>
+					<li className={s.role}>Tailwind</li>
+					<li className={s.role}>Node.js</li>
+					<li className={s.role}>Docs writing</li>
+					<li className={s.role}>SSR</li>
+					<li className={s.role}>API building</li>
+					<li className={s.role}>Ruby on Rails</li>
+					<li className={s.role}>Design systems</li>
+				</ul>
+			</div>
 			<div className={s.current}>
 				<div className={s.header}>
+					<h2 className={s.heading}>Current</h2>
 					<h2 className={s.company}>{current.company}</h2>
 					{current.roles.map(({ name, duration }, roleIndex) => (
 						<p className={s.role} key={roleIndex}>

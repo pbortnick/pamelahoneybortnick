@@ -18,6 +18,9 @@ const Nav = () => {
 						<NavItem href="/illustrations">Illustrations</NavItem>
 					</NavigationMenu.Item>
 					<NavigationMenu.Item className={s.desktop}>
+						<NavItem href="/services">Services</NavItem>
+					</NavigationMenu.Item>
+					<NavigationMenu.Item className={s.desktop}>
 						<NavigationMenu.Link
 							href="mailto:pbortnick@gmail.com"
 							className={s.buttonLink}
@@ -39,6 +42,7 @@ const Nav = () => {
 						<NavigationMenu.Content className={s.mobileMenuContent}>
 							<NavItem href="/experience">Experience</NavItem>
 							<NavItem href="/illustrations">Illustrations</NavItem>
+							<NavItem href="/services">Services</NavItem>
 							<NavigationMenu.Link
 								href="mailto:pbortnick@gmail.com"
 								className={s.buttonLink}
