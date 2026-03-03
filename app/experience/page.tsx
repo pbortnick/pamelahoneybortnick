@@ -7,11 +7,7 @@ const ExperiencePage = () => {
 			<div className={s.titleSection}>
 				<h1 className={s.title}>Pamela&apos;s Experience</h1>
 				<div className={s.resume}>
-					<ButtonLink
-						href="/resume.pdf"
-						text="Download Resume"
-						theme="light"
-					/>
+					<ButtonLink href="/resume.pdf" text="Download Resume" theme="light" />
 				</div>
 			</div>
 			<div className={s.education}>
@@ -24,21 +20,26 @@ const ExperiencePage = () => {
 				</div>
 			</div>
 			<div className={s.skills}>
-				<h2 className={s.heading} style={{ textDecoration: "none" }}>
+				<h2
+					className={s.heading}
+					style={{ textDecoration: "none", paddingBottom: 0 }}
+				>
 					Skills
 				</h2>
 				<ul className={s.skillsList}>
+					<li className={s.role}>Website Development</li>
+					<li className={s.role}>Mobile App Development</li>
 					<li className={s.role}>JavaScript</li>
 					<li className={s.role}>TypeScript</li>
 					<li className={s.role}>Next.js</li>
 					<li className={s.role}>React</li>
 					<li className={s.role}>GraphQL</li>
+					<li className={s.role}>SQL</li>
 					<li className={s.role}>CSS</li>
-					<li className={s.role}>CSS Modules</li>
 					<li className={s.role}>Tailwind</li>
 					<li className={s.role}>Node.js</li>
-					<li className={s.role}>Docs writing</li>
-					<li className={s.role}>SSR</li>
+					<li className={s.role}>Developer content</li>
+					<li className={s.role}>Server side rendering</li>
 					<li className={s.role}>API building</li>
 					<li className={s.role}>Ruby on Rails</li>
 					<li className={s.role}>Design systems</li>

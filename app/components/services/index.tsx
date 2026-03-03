@@ -11,9 +11,11 @@ const Services = () => {
 					<a href="/services">services page</a> to learn more about each item.
 				</p>
 				<ul className={s.list}>
-					<li>Website building</li>
-					<li>Website enhancement</li>
-					<li>SEO optimization</li>
+					<li>Custom websites</li>
+					<li>Website improvement</li>
+					<li>E-commerce solutions</li>
+					<li>Mobile app development</li>
+					<li>Graphic design</li>
 				</ul>
 			</div>
 			<div className={s.footer}>

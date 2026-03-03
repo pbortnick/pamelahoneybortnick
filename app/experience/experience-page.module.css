@@ -14,6 +14,7 @@
 	padding: var(--spacing-03) 0;
 	grid-column: 1 / -1;
 	gap: var(--spacing-01);
+	justify-content: space-between;
 }
 
 .title {
@@ -74,12 +75,17 @@
 }
 
 .skillsList {
-	padding-top: var(--spacing-03);
+	padding-top: var(--spacing-01);
 	padding-left: 10px;
 	border-top: 1px solid var(--secondary);
 	display: flex;
 	flex-direction: column;
-	gap: var(--spacing-03);
+	gap: var(--spacing-01);
+
+	@media (min-width: 768px) {
+		padding-top: var(--spacing-03);
+		gap: var(--spacing-03);
+	}
 }
 
 .current {

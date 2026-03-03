@@ -1,0 +1,42 @@
+.page {
+	padding: var(--padding);
+	font-family: var(--font-anonymous-pro);
+	background: var(--background);
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: var(--padding);
+	max-width: var(--page-width);
+	margin: 0 auto;
+	color: var(--primary);
+}
+
+.titleSection {
+	display: flex;
+	padding: var(--spacing-03) 0;
+	grid-column: 1 / -1;
+	gap: var(--spacing-01);
+}
+
+.title {
+	color: var(--primary);
+}
+
+.serviceSection {
+	grid-column: 1 / -1;
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-03);
+	border-radius: var(--border-radius);
+	padding: var(--spacing-03);
+	color: var(--primary);
+	background: var(--secondary-light);
+
+	& .description {
+		max-width: 600px;
+	}
+
+	&:nth-child(2n) {
+		background: var(--secondary);
+		color: var(--primary);
+	}
+}
