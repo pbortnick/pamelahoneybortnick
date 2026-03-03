@@ -9,23 +9,20 @@
 	margin: 0 auto;
 }
 
-.title {
+.titleSection {
+	display: flex;
 	padding: var(--spacing-03) 0;
 	grid-column: 1 / -1;
+	gap: var(--spacing-01);
+	justify-content: space-between;
+}
+
+.title {
 	color: var(--primary);
 }
 
 .resume {
-	background-color: var(--secondary-light);
-	color: var(--primary);
-	border-radius: var(--border-radius);
-	padding: var(--spacing-04);
-	min-height: 80vh;
-
-	@media (min-width: 768px) {
-		padding-left: var(--spacing-06);
-		padding-right: var(--spacing-06);
-	}
+	display: flex;
 }
 
 .education {
@@ -39,11 +36,11 @@
 	justify-content: space-between;
 
 	@media (min-width: 768px) {
-		grid-column: span 6;
+		grid-column: span 8;
 	}
 
 	@media (min-width: 1200px) {
-		grid-column: span 4;
+		grid-column: span 10;
 	}
 }
 
@@ -51,9 +48,43 @@
 	text-decoration: underline;
 	font-size: var(--font-size-large);
 	padding-bottom: var(--spacing-02);
+	margin-bottom: var(--spacing-01);
 
 	@media (min-width: 768px) {
 		padding-bottom: 0;
+	}
+}
+
+.skills {
+	background-color: var(--primary);
+	grid-column: span 12;
+	grid-row: span 4;
+	border-radius: var(--border-radius);
+	padding: var(--padding);
+	color: var(--secondary);
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: 768px) {
+		grid-column: span 4;
+	}
+
+	@media (min-width: 1200px) {
+		grid-column: span 2;
+	}
+}
+
+.skillsList {
+	padding-top: var(--spacing-01);
+	padding-left: 10px;
+	border-top: 1px solid var(--secondary);
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-01);
+
+	@media (min-width: 768px) {
+		padding-top: var(--spacing-03);
+		gap: var(--spacing-03);
 	}
 }
 
@@ -65,11 +96,11 @@
 	color: var(--primary);
 
 	@media (min-width: 768px) {
-		grid-column: span 6;
+		grid-column: span 8;
 	}
 
 	@media (min-width: 1200px) {
-		grid-column: span 8;
+		grid-column: span 10;
 	}
 }
 
@@ -81,11 +112,11 @@
 	color: var(--primary);
 
 	@media (min-width: 768px) {
-		grid-column: span 6;
+		grid-column: span 4;
 	}
 
 	@media (min-width: 1200px) {
-		grid-column: span 4;
+		grid-column: span 5;
 	}
 }
 

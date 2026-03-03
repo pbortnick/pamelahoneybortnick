@@ -6,13 +6,25 @@ interface ButtonLinkProps {
 	text: string;
 	href: string;
 	opensNewTab?: boolean;
+	theme?: "primary" | "light";
 }
 
-const ButtonLink = ({ text, href, opensNewTab }: ButtonLinkProps) => (
+const ButtonLink = ({
+	text,
+	href,
+	opensNewTab,
+	theme = "primary",
+}: ButtonLinkProps) => (
 	<Link
 		href={href}
 		className={s.buttonLink}
 		target={opensNewTab ? "_blank" : undefined}
+		style={{
+			["--color" as string]:
+				theme === "primary" ? "var(--secondary)" : "var(--primary)",
+			["--background" as string]:
+				theme === "primary" ? "var(--primary)" : "var(--secondary-light)",
+		}}
 	>
 		<div className={s.content}>
 			{text}
