@@ -60,6 +60,7 @@
 }
 
 .mobileMenuContent {
+	z-index: 1;
 	position: absolute;
 	top: 24px;
 	right: -16px;
